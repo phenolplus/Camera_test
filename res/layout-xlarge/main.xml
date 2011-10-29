@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    <test.camara.NewSurface android:id="@+id/surfaceView1" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="fill_parent" ></test.camara.NewSurface>
+    <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout2" android:layout_width="fill_parent" android:layout_weight="1" android:focusable="true" android:focusableInTouchMode="true">
+        <EditText android:layout_height="wrap_content" android:id="@+id/editText2" android:layout_width="wrap_content" android:layout_weight="1" android:inputType="number"></EditText>
+        <EditText android:layout_height="wrap_content" android:id="@+id/editText1" android:layout_width="wrap_content" android:layout_weight="1" android:inputType="number">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_weight="0.82">
+        <Button android:text="GO" android:id="@+id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="goClicked"></Button>
+        <Button android:text="STOP" android:id="@+id/button2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="stopClicked"></Button>
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView1" android:text="TextView"></TextView>
+        <Button android:text="Move" android:id="@+id/button3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="moveClicked"></Button>
+        <TextView android:text="TextView" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+</LinearLayout>
